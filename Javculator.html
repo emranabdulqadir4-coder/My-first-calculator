@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <style> 
+        body {
+      font-family: Arial, sans-serif;
+      background: grey;
+      color: white;
+      line-height: 1.5;
+      margin: 0;
+    }
+     .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 20px;
+      background-color: gray;
+      color: white;
+     }
+     .exercise {
+      background: white;
+      margin: 20px 0;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0001;
+    }
+    h2 {
+      color: #183b56;
+      margin-top: 0;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+    button {
+      background: #183b56;
+      color: white;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .output {
+      margin-top: 12px;
+      padding: 14px;
+      background: #fdf9fb;
+      border-left: 4px solid #183b56;
+      min-height: 22px;
+      color: black;
+    }
+      </style>
+    </head>
+    <body>
+        <div class="container">
+         <section class="exercise" id="exercise4">
+      <h2>Javascript Calculator</h2>
+      <input id="ex4a" type="number" placeholder="First mark">
+      <input id="ex4b" type="number" placeholder="Second mark">
+      <button onclick="operatorPractice1()">+</button>
+      <button onclick="operatorPractice2()">-</button>
+      <button onclick="operatorPractice3()">*</button>
+      <button onclick="operatorPractice4()">/</button>
+      <div id="ex4output" class="output"></div>
+      <p>Simple calculator I made when I was bored</p>
+      <script>
+        function operatorPractice1() {
+          let a = Number(document.getElementById("ex4a").value);
+          let b = Number(document.getElementById("ex4b").value);
+          document.getElementById("ex4output").innerHTML = 
+            (a + b)}
+        function operatorPractice2() {
+          let a = Number(document.getElementById("ex4a").value);
+          let b = Number(document.getElementById("ex4b").value);
+          document.getElementById("ex4output").innerHTML = 
+        (a - b)}
+        function operatorPractice3() {
+          let a = Number(document.getElementById("ex4a").value);
+          let b = Number(document.getElementById("ex4b").value);
+          document.getElementById("ex4output").innerHTML = 
+        (a * b)}
+        function operatorPractice4() {
+          let a = Number(document.getElementById("ex4a").value);
+          let b = Number(document.getElementById("ex4b").value);
+          document.getElementById("ex4output").innerHTML = 
+            (b !== 0 ? (a / b) : "Undefined")}
+        </script>
+        </div>
+        </section>
+    </body>
+</html> 
